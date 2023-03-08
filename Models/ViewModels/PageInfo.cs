@@ -13,6 +13,6 @@ namespace MIssion09_ahyer107.Models.ViewModels
 
         //Figure out how many pages we need
         //It wasn't returning the correct ammout of pages so I just put +1 on it
-        public int TotalPages => (int) Math.Ceiling((double) TotalNumBooks / BooksPerPage) +1;
+        public int TotalPages => (int) Math.Ceiling((double) TotalNumBooks / BooksPerPage);
     }
 }

@@ -3,19 +3,27 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Amazon</title>
-    <link href="/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+          asp-href-include="~/lib/css/bootstrap.min.css"
+          asp-href-exclude="**/*-reboot*,**/*-grid*"/>"
 </head>
 <body>
     <div class="bg-dark text-white p-2">
         <span class="navbar-brand ml-2">Amazon</span>
     </div>
     <div class="row m-1 p-1">
+
         <div id="categories" class="col-3">
-            Welcome to Amazon!
+            <vc:types></vc:types>
         </div>
+
         <div class="col-9">
-            @RenderBody()
+            <div>
+                @RenderBody()
+            </div>
         </div>
+
     </div>
+    <script src="~/lib/js/bootstrap.js"></script>
 </body>
 </html>
