@@ -9,7 +9,7 @@
         <h4 class="lead fw-bold"> <!--TA: The lead tag makes these words slightly taller and then the bold tage makes them dark to stand out-->
             @Model.Title
             <span class="badge bg-info" style="float:right">
-                <small class="text-decoration-line-through">@((Model.Price*1.2).ToString("c"))</small> <!--I used the line through modification here to make it look like like every book if on sale-->
+                <small class="text-decoration-line-through">@((Model.Price*1.2).ToString("c"))</small> <!-- TA: I used the line through modification here to make it look like like every book is on sale-->
                 <small>@Model.Price.ToString("c")</small>
             </span>
         </h4>
