@@ -5,12 +5,26 @@
     <title>Amazon</title>
     <link rel="stylesheet"
           asp-href-include="~/lib/css/bootstrap.min.css"
-          asp-href-exclude="**/*-reboot*,**/*-grid*"/>"
+          asp-href-exclude="**/*-reboot*,**/*-grid*" />"
+    <link href="/lib/font-awesome/css/all.min.css" rel="stylesheet" />
 </head>
-<body class="bg-light"> <!--TA: Here is where I added the light background tag-->
+<body class="bg-light">
+    <!--TA: Here is where I added the light background tag-->
+    @*<div class="bg-dark text-white p-2">
+            <span class="navbar-brand ml-2">Welcome to Amazon</span>
+        </div>*@
+
     <div class="bg-dark text-white p-2">
-        <span class="navbar-brand ml-2">Welcome to Amazon</span>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col navbar-brand">AMAZON</div>
+                <div class="col-6 text-end">
+                    <vc:cart-summary />
+                </div>
+            </div>
+        </div>
     </div>
+
     <div class="row m-1 p-1">
 
         <div id="categories" class="col-3">
